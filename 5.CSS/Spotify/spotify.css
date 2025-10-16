@@ -1,0 +1,150 @@
+/* PC */
+
+body{margin: 0px}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    a {
+        color: #1ed760;
+        margin: 10px;
+    }
+}
+
+.landing-container {
+    position: relative;
+    display: block;
+}
+
+.landing {
+    width: 100%;
+}
+
+.text {
+    position: absolute;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+.textin1 {
+    top: 20%;
+    font-size: clamp(10px, 6vw, 48px);
+    font-weight: bold
+}
+
+.textin2 {
+    top: 40%;
+    font-size: clamp(5px, 3vw, 36px);
+}
+
+.textin3 {
+    top: 50%;
+    font-size: clamp(5px, 3vw, 32px);
+}
+
+h2 {
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #1ed760;
+}
+
+.bloc {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px
+}
+
+
+.bloc1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 33%;
+}
+
+.titolverd {color: #1ed760;font-weight: bold;}
+
+.logo {width: 33%}
+
+h3 {
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+
+.promo-spotify {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 20px;
+    color: white;
+    text-align: left;
+    background-color: #1ed760;
+    padding: 40px;
+    margin-top: 50px;
+}
+
+.promo-logo {
+    width: 50%;
+    justify-self: center;
+    align-self: center;
+}
+
+.music {
+    width: 100%;
+    justify-self: center;
+    align-self: center;
+}
+
+/* Telefono */
+@media (max-width: 600px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: clamp(10px, 3vw, 36px);
+
+        a {
+            text-align: center;
+            display: block;
+        }
+    }
+
+    .bloc {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        font-size: clamp(10px, 3vw, 36px);
+    }
+
+.promo-spotify {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: left;
+    background-color: #1ed760;
+    padding: 40px;
+    margin-top: 50px;
+    font-size: clamp(10px, 3vw, 36px);
+
+}
+
+            
+}
+
+
+
+
+/* Tablet */
+@media (min-width: 601px) and (max-width: 1024px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

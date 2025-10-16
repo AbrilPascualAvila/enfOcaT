@@ -1,0 +1,8 @@
+div {background-color: red;
+    outline: yellowgreen dotted 6px;
+    width: 100px;
+    height: 100px;
+}
+
+div:hover{outline: #000000 dotted 6px;
+}

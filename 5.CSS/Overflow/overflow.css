@@ -1,0 +1,16 @@
+html{
+    background-color: white;
+    
+}
+
+span{background-color:rgb(85, 192, 254)
+}
+
+div{padding-top: 15px;
+    background-color: greenyellow;
+    height: 150px;
+    width: 150px;
+    overflow: auto;
+    /* En el otro caso seria hidden */
+
+}

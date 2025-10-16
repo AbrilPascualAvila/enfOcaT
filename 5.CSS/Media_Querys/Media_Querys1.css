@@ -1,0 +1,14 @@
+body {background-color: #88e788;}
+
+
+@media (max-width: 600px) {
+  body {
+    background-color: #641c34;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    background-color: #9D00FF;
+  }
+}

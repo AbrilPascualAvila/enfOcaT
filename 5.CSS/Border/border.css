@@ -1,0 +1,13 @@
+body {
+    background-color: white; 
+    border-top:dotted  yellowgreen;
+    border-left:double  black;
+    border-right:dashed  blue;
+    border-bottom:solid  red;
+    padding: 50px;
+    border-top-width: 5px;
+    border-left-width: 10px;
+    border-right-width: 12px;
+    border-bottom-width: 5px;
+    margin: 50px;
+}

@@ -1,0 +1,38 @@
+.text{text-align: center;
+    font-style: italic;
+    padding: 10px}
+
+.div{position: absolute;}
+
+.circulo {border-radius: 100px; 
+    position: absolute;
+    width: 75px; 
+    height: 75px; 
+} 
+
+.nivel{margin-top: 100px}
+
+.suma{position: absolute;
+    left: 39%}
+
+.igual{position: absolute;
+    left: 59%}
+
+.alto1{top: 225px;}
+.alto2{top: 325px;}
+.alto3{top: 425px;}
+
+.alto4{top: 250px;}
+.alto5{top: 350px;}
+.alto6{top: 450px;}
+
+.izq{left: 25%;}
+.centro{left: 45%;}
+.der{left: 65%;}
+
+.rojo{background-color: red;}
+.azul{background-color: blue;}
+.verde{background-color: greenyellow;}
+.cyan{background-color: cyan;}
+.violeta{background-color: violet;}
+.amarillo{background-color: yellow;}

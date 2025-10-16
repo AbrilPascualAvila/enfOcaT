@@ -1,0 +1,90 @@
+body {background-color: #88e788;}
+div {border: solid 4px #88e788;}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+@media (max-width: 320px) {
+    .part1 { width: 97%; 
+        height: 50px; 
+    }
+    .part2 { width: 100%; 
+        height: 50px; 
+    }
+    .part3 { width: 100%; 
+        height: 125px; 
+    }
+    .part4 { width: 100%; 
+        height: 50px;  
+    }
+    .hidden { visibility: hidden;  
+    }
+}
+
+@media (max-width: 768px){
+    .part1 { width: 96%; 
+        height: 50px; 
+    }
+    .part2 { width: 96%; 
+        height: 150px; 
+    }
+    .part3 { width: 96%; 
+        height: 75px; 
+    }
+
+    .part4 {
+        float: left;
+        width: 47.5%;
+        height: 50px;
+    }
+    .part4-2 {
+        float: right;
+        width: 47.5%;
+        height: 50px;
+    }
+
+}  
+
+
+@media (max-width: 1024px) {
+    .part1 {
+        display: inline-block;
+        width: 49%;
+        height: 50px;
+        vertical-align: top;
+    }
+
+    .part2 {
+        display: block;
+        width: 100%;
+        height: 150px;
+    }
+
+    .part3 {
+        display: inline-block;
+        width: 32%;
+        height: 100px;
+        vertical-align: top;
+    }
+
+    .part4 {
+        display: inline-block;
+        width: 32%;
+        height: 75px;
+        vertical-align: top;
+    }
+}
+
+
+
+
+.taronja{background-color: orange} 
+.groc{background-color: yellow} 
+.blau{background-color: lightskyblue} 
+.gris{background-color: lightgrey}

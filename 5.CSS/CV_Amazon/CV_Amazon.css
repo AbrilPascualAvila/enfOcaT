@@ -1,0 +1,97 @@
+.header {
+    display: flex;
+    align-items: center
+}
+
+.hire {
+    display: block;
+    color: lightskyblue;
+    margin-left: 100px
+}
+
+.nav{gap: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    width: 100%
+}
+
+.nav span {
+    color: darkblue;
+    text-align: center
+}
+
+
+.divider {color: #aaa}
+
+.divider2 {color: #aaa;
+    font-size: 30px; }
+
+.nav a.contact {color: #bd6c46}
+
+
+.menu p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.2; 
+    white-space: pre-line;
+}
+
+.menu p strong::before {
+    content: "\A"; /* salto de línea */
+    gap: 20px;
+}
+
+
+.search-bar {
+    display: flex;
+    flex: 1;
+    margin: 0 20px;
+    max-width: 600px;
+}
+
+.search-bar select {
+    border: 1px solid #ccc;
+    border-right: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 6px;
+    font-size: 14px;
+    background: #f3f3f3;
+}
+
+.search-bar input {
+    flex: 1;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-right: none;
+    padding: 6px;
+}
+
+.search-bar button {
+    border: 1px solid #333;
+    border-left: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: #333;
+    color: white;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+.options {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 14px;
+}
+
+.options div {
+    cursor: pointer;
+}
+
+.cart {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-weight: bold;
+}

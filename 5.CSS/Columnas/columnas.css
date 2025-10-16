@@ -1,0 +1,22 @@
+html {
+    background-color: #f5e294; 
+}
+
+p {
+    column-count: 3;
+    column-gap: 40px;
+    column-rule: solid 2px red;
+}
+
+h1 {
+    color: red;
+}
+
+span:hover {
+    color: white;
+}
+
+p::selection{
+    background-color: white ;
+    color: royalblue;
+}
