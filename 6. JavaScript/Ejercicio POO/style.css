@@ -1,0 +1,130 @@
+/* Body general */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background: linear-gradient(135deg, #1a001a, #4b0082, #ff0000); /* Negro + violeta + rojo intenso */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Contenedor del quiz */
+#quiz-container {
+    background: rgba(0, 0, 0, 0.85); /* Fondo negro semitransparente */
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(255,0,0,0.4); /* Sombra roja intensa */
+    width: 90%;
+    max-width: 700px;
+    padding: 40px;
+    text-align: center;
+    animation: popUp 0.5s ease;
+}
+
+/* Título */
+h1 {
+    font-size: 2.5rem;
+    color: #ff0000; /* Rojo potente */
+    margin-bottom: 20px;
+}
+
+/* Pregunta */
+#question {
+    font-size: 1.5rem;
+    color: #e600e6; /* Violeta fuerte */
+    margin-bottom: 20px;
+}
+
+/* Feedback */
+#feedback {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    min-height: 24px;
+    color: #ff3333; /* Rojo brillante */
+}
+
+/* Opciones */
+#options {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Botones de opciones */
+.option-btn {
+    padding: 15px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(90deg, #8b00ff, #ff0000); /* Violeta + rojo potente */
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: 0.3s;
+    font-weight: 600;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}
+
+.option-btn:hover {
+    transform: translateY(-3px);
+    background: linear-gradient(90deg, #a000ff, #ff3333); /* Efecto hover más brillante */
+}
+
+/* Respuestas correctas e incorrectas */
+.option-btn.correct {
+    background-color: #00ff99; /* Verde neón contraste */
+    color: #000;
+}
+
+.option-btn.incorrect {
+    background-color: #ff1a1a; /* Rojo intenso para incorrectas */
+    color: #fff;
+}
+
+/* Botón siguiente */
+#nextBtn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 30px;
+    background: linear-gradient(90deg, #4b0082, #ff0000); /* Violeta + rojo */
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: 0 6px 12px rgba(255,0,0,0.5);
+}
+
+#nextBtn:hover {
+    background: linear-gradient(90deg, #8b00ff, #ff3333);
+    transform: translateY(-2px);
+}
+
+/* Score */
+#score {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #ff0000; /* Rojo potente */
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 500px) {
+    h1 {
+        font-size: 2rem;
+    }
+    #question {
+        font-size: 1.3rem;
+    }
+    .option-btn {
+        font-size: 1rem;
+        padding: 12px;
+    }
+    #nextBtn {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}

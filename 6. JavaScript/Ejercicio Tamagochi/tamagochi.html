@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Tamagotchi Pokémon</title>
+  <link rel="stylesheet" href="tamagochi.css">
+</head>
+<body>
+
+  <!-- Selector -->
+  <div class="selector-container" id="selectorContainer">
+    <h2>Elige tu Pokémon</h2>
+    <input type="text" id="pokemonSearch" placeholder="Buscar Pokémon...">
+    <select id="pokemonSelect" aria-label="Selecciona un Pokémon"></select>
+    <button id="startGame">Comenzar</button>
+  </div>
+
+  <!-- Juego -->
+  <div class="game-container" id="gameContainer">
+
+    <!-- Contenedor principal del Pokémon -->
+    <div class="pok-container">
+      <img id="pokemonImg" src="" alt="Imagen del Pokémon seleccionado">
+      <div id="pokemonName">Nombre</div>
+
+      <!-- Barra de vida -->
+      <div class="progress-container life-container">
+        <div id="life" class="progress-bar"></div>
+      </div>
+          <button class="vida"">🧬 Vida</button>
+
+
+      <!-- Cuadrante Comer -->
+      <div class="progress-container">
+        <div id="eatBar" class="progress-bar"></div>
+      </div>
+      <button class="comidas">🍡Food</button>
+    
+
+      <!-- Contenedor de Bayas -->
+      <div class="berry-container" id="berryContainer">
+        <button id="closeFood">Cerrar</button><br>
+        <div class="berry-grid" id="berryGrid"></div>
+      </div>
+    
+
+    <!-- Contenedor del Juego -->
+    <div class="progress-container">
+      <div id="playBar" class="progress-bar"></div>
+    </div>
+    <button class="game" id="startMiniGame">✨Game</button>
+
+    <!-- Contenedor de la batalla -->
+    
+    <div class="progress-container">
+      <div id="fightBar" class="progress-bar"></div>
+    </div>
+      <button id="startFightBtn">⚔️Fight</button>
+    
+
+    <div class="battle-container" id="battleContainer">
+      <div class="battle-box">
+        <div class="battle-arena">
+
+          <!-- Pokémon del jugador -->
+          <div class="pokemon-side player">
+            <img id="playerPokemon" src="" alt="Tu Pokémon">
+            <div class="hp-bar">
+              <div id="playerHP" class="hp"></div>
+            </div>
+          </div>
+
+          <!-- Pokémon enemigo -->
+          <div class="pokemon-side enemy">
+            <img id="enemyPokemon" src="" alt="Enemigo Pokémon">
+            <div class="hp-bar">
+              <div id="enemyHP" class="hp"></div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Información de la batalla -->
+        <div class="battle-info">
+          <div id="battleLog">¡Comienza la batalla!</div>
+          <div class="moves" id="movesContainer"></div>
+          <br>
+          <button id="closeBattle">Cerrar</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <script src="tamagochi.js"></script>
+</body>
+</html>
